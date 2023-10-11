@@ -1,0 +1,193 @@
+/* Reset some default browser styles */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #3498db,
+    #2980b9
+  ); /* Blue gradient background */
+  margin: 0;
+  padding: 0;
+  animation: backgroundFunky 5s infinite alternate; /* Add a subtle background animation */
+}
+
+@keyframes backgroundFunky {
+  0% {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+  }
+  100% {
+    background: linear-gradient(to bottom, #2980b9, #3498db);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f7f7f7; /* Light gray background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for depth */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add subtle hover effects */
+}
+
+.container:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+}
+
+h1 {
+  text-align: center;
+  color: #3498db; /* Blue heading color */
+  font-size: 28px; /* Larger font size for headings */
+  animation: textFunky 2s infinite alternate; /* Add a subtle text animation */
+}
+
+@keyframes textFunky {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold; /* Make labels more prominent */
+  font-size: 20px; /* Larger font size for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 14px; /* Increased padding for better touch interaction */
+  margin-top: 10px;
+  border: 2px solid #ccc; /* Slightly thicker border */
+  border-radius: 6px; /* Rounded input fields */
+  box-sizing: border-box;
+  font-size: 18px; /* Larger font size for better readability */
+  transition: border-color 0.3s ease; /* Add a smooth border color transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #3498db; /* Change border color on focus to match the heading color */
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Style for the "Degree" dropdown */
+label[for="degree"],
+select#degree {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 20px; /* Adjust the font size as needed */
+  transition: border-color 0.3s ease;
+}
+
+select#degree:focus {
+  border-color: #3498db;
+}
+
+/* Additional styles for the "Course" dropdown */
+label[for="course"],
+select#course {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 20px; /* Adjust the font size as needed */
+  transition: border-color 0.3s ease;
+}
+
+select#course:focus {
+  border-color: #3498db;
+}
+
+/* Add some spacing between form elements */
+form > * {
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  background: linear-gradient(
+    to bottom,
+    #e74c3c,
+    #c0392b
+  ); /* Gradient button */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px; /* Larger font size for emphasis */
+  transition: background 0.3s ease; /* Add a smooth background color transition */
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(
+    to bottom,
+    #c0392b,
+    #a53120
+  ); /* Darker gradient on hover */
+}
+
+/* Additional styles for the "About" section */
+.about {
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.about h2 {
+  color: #0072bc; /* Heading color */
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+  background: transparent; /* Make the text background transparent */
+}
+
+.certification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.certification img {
+  max-width: 100px; /* Adjust the image size as needed */
+  margin-right: 20px;
+}
+
+/* Background image with blur effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('dy-patil-university-navi-mumbai-218953.jpg'); /* Replace with your image path */
+  background-size: cover;
+  filter
